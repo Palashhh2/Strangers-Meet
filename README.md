@@ -1,62 +1,34 @@
-# Strangers-Meet
+# 🍽️ Strangers at Supper  
+### *AI-Powered Curated Dinner Matching System*
 
-Lightweight AI-curated dinner matching web app.
+Strangers at Supper is an **AI-first web application** that forms curated groups of six strangers for dinner. Applicants submit a form → AI evaluates them → accepted applicants are automatically grouped → AI generates compatibility explanations.
 
-Quick summary
-- Collect short applicant profiles and availability.
-- Use an AI model to evaluate applicants and produce compatibility explanations.
-- Generate groups of up to 6 matched users and pick a meeting time that fits all members.
+This project demonstrates **full-stack AI integration**, **automated grouping logic**, and **aesthetic UI** using:
 
-Run locally
-```powershell
-cd c:\Users\Documents\strangers-meet
-npm install
-npm run dev
-```
+- **Next.js 14 (App Router)**
+- **OpenAI Responses API**
+- **TailwindCSS + shadcn/ui**
+- **Local JSON database (no Prisma)**
+- **Clean reusable UI components**
 
-Type-check
-```bash
-npx tsc --noEmit
-```
+---
 
-Notes
-- The app uses file-based JSON storage in `data/` (good for prototyping). Move to a database for production.
-- Set `OPENAI_API_KEY` environment variable to enable AI evaluation features.
+## ✨ Features Overview
 
-For full documentation, see `DOCUMENTATION.md` in the repository root.
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 📝 Applicant Experience
+- Beautiful application form
+- Submission is evaluated by AI on:
+  - Creativity & "interestingness"
+  - Personality
+  - Conversation value
+  - Social energy
+  - Dietary preferences compatibility
+  - Availability
+  - Diversity
+- AI returns structured JSON:
+  ```json
+  {
+    "decision": "accepted",
+    "reason": "Strong creative communication...",
+    "confidence": 0.89
+  }
