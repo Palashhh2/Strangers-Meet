@@ -8,7 +8,8 @@ export default function Navbar() {
   const pathname = usePathname() || "/";
 
   const isAdmin = pathname.startsWith("/admin");
-  const showHome = pathname !== "/";
+  // Always show the header Home button so users can quickly return home from anywhere
+  const showHome = true;
 
   return (
     <header className="w-full px-6 py-4 border-b border-slate-200">
@@ -55,17 +56,15 @@ export default function Navbar() {
           </nav>
         </div>
 
-        {/* Home Button - Right Extreme */}
-        {showHome && (
-          <Button asChild variant="default" size="sm" className="flex-shrink-0" style={{ backgroundColor: '#4f46e5', borderColor: '#4f46e5', color: '#fff' }}>
-            <Link href="/" aria-label="Return home" className="inline-flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className="w-4 h-4 text-white" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3 10.5L12 4l9 6.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V10.5z" />
-              </svg>
-              <span className="ml-2 hidden sm:inline">Home</span>
-            </Link>
-          </Button>
-        )}
+        {/* Home Button - Right Extreme (always visible) */}
+        <Button asChild variant="default" size="sm" className="flex-shrink-0" style={{ backgroundColor: '#4f46e5', borderColor: '#4f46e5', color: '#fff' }}>
+          <Link href="/" aria-label="Return home" className="inline-flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className="w-4 h-4 text-white" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3 10.5L12 4l9 6.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V10.5z" />
+            </svg>
+            <span className="ml-2 hidden sm:inline">Home</span>
+          </Link>
+        </Button>
       </div>
     </header>
   );
