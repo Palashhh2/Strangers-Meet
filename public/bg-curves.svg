@@ -1,0 +1,55 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Main gradient for curves -->
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0e7ff;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#c7d2fe;stop-opacity:0.35" />
+    </linearGradient>
+    
+    <!-- Accent gradient for secondary elements -->
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#bfdbfe;stop-opacity:0.2" />
+    </linearGradient>
+    
+    <!-- Filter for subtle glow effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f8fafc"/>
+  
+  <!-- Decorative circles in corners (subtle) -->
+  <circle cx="100" cy="100" r="80" fill="#eef2ff" opacity="0.15"/>
+  <circle cx="1100" cy="700" r="120" fill="#e0e7ff" opacity="0.1"/>
+  <circle cx="1050" cy="150" r="60" fill="#dbeafe" opacity="0.12"/>
+  
+  <!-- Main curved lines -->
+  <path d="M0,200 Q300,100 600,200 T1200,200" stroke="url(#grad1)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M0,300 Q300,400 600,300 T1200,300" stroke="url(#grad1)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M0,400 Q150,350 300,400 Q450,450 600,400 Q750,350 900,400 Q1050,450 1200,400" stroke="url(#grad1)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M0,500 Q300,600 600,500 T1200,500" stroke="url(#grad1)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M0,150 Q200,50 400,150 Q600,250 800,150 Q1000,50 1200,150" stroke="url(#grad1)" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M0,650 Q300,750 600,650 T1200,650" stroke="url(#grad1)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Secondary accent curves -->
+  <path d="M0,250 Q400,150 800,250 Q1000,300 1200,250" stroke="url(#grad2)" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M0,550 Q300,480 600,550 Q900,620 1200,550" stroke="url(#grad2)" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+  
+  <!-- Accent dots along paths -->
+  <circle cx="200" cy="200" r="3" fill="#c7d2fe" opacity="0.4"/>
+  <circle cx="600" cy="200" r="3" fill="#c7d2fe" opacity="0.5"/>
+  <circle cx="1000" cy="200" r="3" fill="#c7d2fe" opacity="0.4"/>
+  
+  <circle cx="300" cy="500" r="3" fill="#c7d2fe" opacity="0.4"/>
+  <circle cx="900" cy="500" r="3" fill="#c7d2fe" opacity="0.5"/>
+  
+  <!-- Subtle wave pattern at bottom -->
+  <path d="M0,750 Q150,760 300,750 Q450,740 600,750 Q750,760 900,750 Q1050,740 1200,750" stroke="#c7d2fe" stroke-width="1.5" fill="none" opacity="0.3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,37 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="gradMatches" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0e7ff;stop-opacity:0.62" />
+      <stop offset="100%" style="stop-color:#c7d2fe;stop-opacity:0.32" />
+    </linearGradient>
+    <linearGradient id="gradMatchesAcc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:0.42" />
+      <stop offset="100%" style="stop-color:#bfdbfe;stop-opacity:0.18" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="#f8fafc"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="130" cy="130" r="90" fill="#eef2ff" opacity="0.17"/>
+  <circle cx="1090" cy="770" r="125" fill="#e0e7ff" opacity="0.13"/>
+  <circle cx="1040" cy="170" r="68" fill="#dbeafe" opacity="0.13"/>
+  
+  <!-- Symmetrical flowing curves -->
+  <path d="M0,280 Q300,150 600,280 T1200,280" stroke="url(#gradMatches)" stroke-width="3.8" fill="none" stroke-linecap="round"/>
+  <path d="M0,480 Q300,580 600,480 T1200,480" stroke="url(#gradMatches)" stroke-width="3.8" fill="none" stroke-linecap="round"/>
+  <path d="M0,680 Q150,620 300,680 Q450,740 600,680 Q750,620 900,680 Q1050,740 1200,680" stroke="url(#gradMatches)" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Accent curves -->
+  <path d="M0,190 Q400,90 800,190 Q1000,240 1200,190" stroke="url(#gradMatchesAcc)" stroke-width="2.3" fill="none" stroke-linecap="round" opacity="0.72"/>
+  <path d="M0,740 Q300,660 600,740 Q900,820 1200,740" stroke="url(#gradMatchesAcc)" stroke-width="2.3" fill="none" stroke-linecap="round" opacity="0.72"/>
+  
+  <!-- Accent dots -->
+  <circle cx="240" cy="280" r="3.8" fill="#c7d2fe" opacity="0.52"/>
+  <circle cx="600" cy="280" r="3.8" fill="#c7d2fe" opacity="0.62"/>
+  <circle cx="960" cy="280" r="3.8" fill="#c7d2fe" opacity="0.52"/>
+  <circle cx="310" cy="480" r="3.2" fill="#c7d2fe" opacity="0.48"/>
+  <circle cx="890" cy="480" r="3.2" fill="#c7d2fe" opacity="0.48"/>
+  
+  <!-- Bottom wave -->
+  <path d="M0,810 Q150,830 300,810 Q450,790 600,810 Q750,830 900,810 Q1050,790 1200,810" stroke="#c7d2fe" stroke-width="2" fill="none" opacity="0.32" stroke-linecap="round"/>
+</svg>

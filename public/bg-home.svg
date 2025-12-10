@@ -1,0 +1,36 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="gradHome" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0e7ff;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#c7d2fe;stop-opacity:0.4" />
+    </linearGradient>
+    <linearGradient id="gradHomeAcc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#bfdbfe;stop-opacity:0.25" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="#f8fafc"/>
+  
+  <!-- Large decorative circles -->
+  <circle cx="150" cy="150" r="100" fill="#eef2ff" opacity="0.2"/>
+  <circle cx="1100" cy="750" r="140" fill="#e0e7ff" opacity="0.15"/>
+  
+  <!-- Main flowing curves -->
+  <path d="M0,250 Q300,100 600,250 T1200,250" stroke="url(#gradHome)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M0,400 Q300,500 600,400 T1200,400" stroke="url(#gradHome)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M0,550 Q150,480 300,550 Q450,620 600,550 Q750,480 900,550 Q1050,620 1200,550" stroke="url(#gradHome)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Secondary accent curves -->
+  <path d="M0,180 Q400,80 800,180 Q1000,220 1200,180" stroke="url(#gradHomeAcc)" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.8"/>
+  <path d="M0,700 Q300,620 600,700 Q900,780 1200,700" stroke="url(#gradHomeAcc)" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.8"/>
+  
+  <!-- Accent dots -->
+  <circle cx="250" cy="250" r="4" fill="#c7d2fe" opacity="0.5"/>
+  <circle cx="600" cy="250" r="4" fill="#c7d2fe" opacity="0.6"/>
+  <circle cx="950" cy="250" r="4" fill="#c7d2fe" opacity="0.5"/>
+  <circle cx="400" cy="550" r="3.5" fill="#bfdbfe" opacity="0.5"/>
+  <circle cx="900" cy="550" r="3.5" fill="#bfdbfe" opacity="0.5"/>
+  
+  <!-- Subtle wave at bottom -->
+  <path d="M0,800 Q150,820 300,800 Q450,780 600,800 Q750,820 900,800 Q1050,780 1200,800" stroke="#c7d2fe" stroke-width="2" fill="none" opacity="0.35" stroke-linecap="round"/>
+</svg>

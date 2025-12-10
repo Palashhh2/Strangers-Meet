@@ -1,0 +1,42 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="gradAdmin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0e7ff;stop-opacity:0.68" />
+      <stop offset="100%" style="stop-color:#c7d2fe;stop-opacity:0.38" />
+    </linearGradient>
+    <linearGradient id="gradAdminAcc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:0.48" />
+      <stop offset="100%" style="stop-color:#bfdbfe;stop-opacity:0.22" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="#f8fafc"/>
+  
+  <!-- Larger decorative circles for dashboard feel -->
+  <circle cx="120" cy="120" r="95" fill="#eef2ff" opacity="0.2"/>
+  <circle cx="1100" cy="780" r="150" fill="#e0e7ff" opacity="0.14"/>
+  <circle cx="1050" cy="180" r="75" fill="#dbeafe" opacity="0.15"/>
+  <circle cx="80" cy="700" r="65" fill="#c7d2fe" opacity="0.1"/>
+  
+  <!-- Bold flowing curves -->
+  <path d="M0,220 Q300,80 600,220 T1200,220" stroke="url(#gradAdmin)" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+  <path d="M0,420 Q300,520 600,420 T1200,420" stroke="url(#gradAdmin)" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+  <path d="M0,620 Q150,550 300,620 Q450,690 600,620 Q750,550 900,620 Q1050,690 1200,620" stroke="url(#gradAdmin)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Secondary accent curves -->
+  <path d="M0,160 Q400,60 800,160 Q1000,200 1200,160" stroke="url(#gradAdminAcc)" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.8"/>
+  <path d="M0,750 Q300,670 600,750 Q900,830 1200,750" stroke="url(#gradAdminAcc)" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.8"/>
+  <path d="M0,350 Q200,300 400,350 Q600,400 800,350 Q1000,300 1200,350" stroke="url(#gradAdminAcc)" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+  
+  <!-- Accent dots -->
+  <circle cx="280" cy="220" r="4.5" fill="#c7d2fe" opacity="0.6"/>
+  <circle cx="600" cy="220" r="4.5" fill="#c7d2fe" opacity="0.7"/>
+  <circle cx="920" cy="220" r="4.5" fill="#c7d2fe" opacity="0.6"/>
+  <circle cx="350" cy="620" r="4" fill="#bfdbfe" opacity="0.55"/>
+  <circle cx="900" cy="620" r="4" fill="#bfdbfe" opacity="0.55"/>
+  <circle cx="200" cy="350" r="3" fill="#dbeafe" opacity="0.5"/>
+  <circle cx="1000" cy="350" r="3" fill="#dbeafe" opacity="0.5"/>
+  
+  <!-- Double wave pattern at bottom -->
+  <path d="M0,800 Q150,820 300,800 Q450,780 600,800 Q750,820 900,800 Q1050,780 1200,800" stroke="#c7d2fe" stroke-width="2.5" fill="none" opacity="0.38" stroke-linecap="round"/>
+  <path d="M0,850 Q200,870 400,850 Q600,830 800,850 Q1000,870 1200,850" stroke="#bfdbfe" stroke-width="1.5" fill="none" opacity="0.25" stroke-linecap="round"/>
+</svg>
