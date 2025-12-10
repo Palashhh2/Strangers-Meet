@@ -44,20 +44,7 @@ export default function Home() {
                 👀 View Groups
               </Button>
             </Link>
-            {/* Home Button to match Navbar styling */}
-            <Link href="/">
-              <Button
-                size="lg"
-                className="px-8 py-6 text-base font-semibold shadow-lg hover:shadow-xl transition hover:scale-105 transform duration-200"
-                style={{ backgroundColor: '#4f46e5', borderColor: '#4f46e5', color: '#fff' }}
-                aria-label="Home"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className="w-5 h-5 inline-block mr-2" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 10.5L12 4l9 6.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V10.5z" />
-                </svg>
-                Home
-              </Button>
-            </Link>
+            
           </div>
         </div>
       </section>
