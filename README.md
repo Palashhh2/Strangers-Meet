@@ -1,3 +1,29 @@
+# Strangers-Meet
+
+Lightweight AI-curated dinner matching web app.
+
+Quick summary
+- Collect short applicant profiles and availability.
+- Use an AI model to evaluate applicants and produce compatibility explanations.
+- Generate groups of up to 6 matched users and pick a meeting time that fits all members.
+
+Run locally
+```powershell
+cd c:\Users\Documents\strangers-meet
+npm install
+npm run dev
+```
+
+Type-check
+```bash
+npx tsc --noEmit
+```
+
+Notes
+- The app uses file-based JSON storage in `data/` (good for prototyping). Move to a database for production.
+- Set `OPENAI_API_KEY` environment variable to enable AI evaluation features.
+
+For full documentation, see `DOCUMENTATION.md` in the repository root.
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
